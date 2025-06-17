@@ -27,7 +27,7 @@ An AI-powered video editor that automatically generates captions, adds B-roll fo
 - **Storage**: Local SQLite + optional Supabase integration
 - **Processing**: FFmpeg pipeline for video editing
 
-## Installation
+## Quick Start
 
 ```bash
 # Clone the repository
@@ -37,28 +37,35 @@ cd AiVideoEditor
 # Install dependencies
 pip install -r requirements.txt
 
+# Set up your OpenAI API key (required for AI features)
+echo "OPENAI_API_KEY=your_api_key_here" > .env
+
 # Run the application
-streamlit run app.py
+python run.py
 ```
+
+The app will automatically open in your browser at `http://localhost:8501`
+
+For detailed installation instructions, see [INSTALL.md](INSTALL.md)
 
 ## Development Roadmap
 
 ### Phase 1: Core Foundation ✅
 - [x] Project structure
-- [ ] FFmpeg integration
-- [ ] Whisper transcription
-- [ ] Basic caption overlay
+- [x] FFmpeg integration
+- [x] Whisper transcription
+- [x] Basic caption overlay
 
-### Phase 2: AI Enhancement
-- [ ] GPT content analysis
-- [ ] B-roll recommendation engine
-- [ ] Intelligent scene detection
+### Phase 2: AI Enhancement ✅
+- [x] GPT content analysis
+- [x] B-roll recommendation engine
+- [x] Intelligent scene detection
 
-### Phase 3: Meme Mode
-- [ ] Emoji overlay system
-- [ ] Zoom effects
-- [ ] Sound effect integration
-- [ ] Viral content templates
+### Phase 3: Meme Mode ✅
+- [x] Emoji overlay system
+- [x] Zoom effects
+- [x] Sound effect integration
+- [x] Viral content templates
 
 ### Phase 4: Polish & Scale
 - [ ] Advanced UI/UX
